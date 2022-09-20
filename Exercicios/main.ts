@@ -3,14 +3,10 @@ import {Aviao} from './aviao';
 import {ProdutoEletronico} from './produtoEletronico';
 import {Funcionario} from './funcionario';
 
-let cliente = new Cliente();
-let aviao = new Aviao();
+let cliente = new Cliente('32d','Lucas',30);
+let aviao = new Aviao('Aviona', 345, 2014, 'TAM', 20);
 let produtoEletronico = new ProdutoEletronico();
-let funcionario = new Funcionario("David", 25, 'Amazon', 2600);
-
-cliente.id = '1';
-cliente.nome = 'Ricardo';
-cliente.idade = 40;
+let funcionario = new Funcionario("David", 30, "Amazon", 1200);
 
 aviao.anoLancamento = 2014;
 aviao.codigo = 214;
@@ -21,21 +17,12 @@ produtoEletronico.nome = 'ventilador';
 produtoEletronico.empresa = 'MONDIAL';
 produtoEletronico.preco = 120;
 
-funcionario.nome = 'David';
-funcionario.idade = 27;
-funcionario.empresa = 'Amazon';
+cliente.infosClient();
 
-console.log(`Id: ${cliente.id}`)
-console.log(`Nome: ${cliente.nome}`)
-console.log(`Idade: ${cliente.idade}`)
-
-console.log(`Codigo: ${aviao.codigo}`)
-console.log(`Modelo: ${aviao.modelo}`)
-console.log(`Ano: ${aviao.anoLancamento}`)
-console.log(`Empresa: ${aviao.empresa}`)
+aviao.infosAviao(75);
 
 console.log(`Produto: ${produtoEletronico.nome}`)
 console.log(`Empresa: ${produtoEletronico.empresa}`)
 console.log(`Preço: ${(produtoEletronico.preco).toFixed(2)}`)
 
-funcionario.depositar(400);
+funcionario.depositar(300);

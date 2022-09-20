@@ -10,14 +10,14 @@ export class Funcionario {
         empresa: string,
         salario: number
     ){
-        this.nome = nome;
-        this.idade = idade;
         this.empresa = empresa;
+        this.idade = idade;
+        this.nome = nome;
         this.salario = salario;
     }
 
     depositar(valor: number){
         this.salario += valor;
-        console.log(`Ganhou mais R$${valor.toFixed(2)} ficando com R$${this.salario.toFixed(2)}`)
+        console.log(`**Depositei R$${valor.toFixed(2)} no seu salario de R$${(this.salario-valor).toFixed(2)} agora você tem R$${this.salario.toFixed(2)}`)
     }
 }
