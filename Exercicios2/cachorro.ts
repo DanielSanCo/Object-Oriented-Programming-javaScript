@@ -6,12 +6,14 @@ export class Cachorro extends Animal {
 
     constructor(nome: string, idade: number){
         super(nome, idade);
+        this.nome = nome;
+        this.idade = idade;
     }
 
     som(): void {
         console.log("Au au!")
     }
     correr(): void {
-        console.log("Correndo igual a um cachorro")
+        console.log("Correndo com quatro patas")
     }
 };

@@ -5,7 +5,9 @@ export class Cavalo extends Animal {
     idade: number;
 
     constructor(nome: string, idade: number){
-        super(nome, idade)
+        super(nome, idade);
+        this.nome = nome;
+        this.idade = idade;
     }
 
     som(): void {
