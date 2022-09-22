@@ -1,11 +1,11 @@
 import { Animal } from "./animal";
 
-export class Cachorro extends Animal {
+export class Cachorro extends Animal{
     nome: string;
     idade: number;
 
     constructor(nome: string, idade: number){
-        super(nome, idade);
+        super(nome, idade)
         this.nome = nome;
         this.idade = idade;
     }
@@ -14,6 +14,6 @@ export class Cachorro extends Animal {
         console.log("Au au!")
     }
     correr(): void {
-        console.log("Correndo com quatro patas")
+        console.log("Correndo com 4 patas")
     }
-};
+}

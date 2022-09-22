@@ -1,4 +1,4 @@
-export abstract class Animal {
+export abstract class Animal{
     nome: string;
     idade: number;
 
@@ -7,6 +7,10 @@ export abstract class Animal {
         this.idade = idade;
     }
 
-    som():void{}
-    correr():void{}
+    som():void{
+
+    }
+    correr():void{
+        
+    }
 }
